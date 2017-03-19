@@ -17,6 +17,9 @@
       </tr>
     </thead>
     <tbody>
+      <div class="text-center">
+        <%= will_paginate @posts %>
+      </div>
       <% @posts.each do |post| %>
       <tr>
         <td><%= post.content %></td>
